@@ -1,0 +1,35 @@
+{
+	"description": {
+		"translate": "Hearty"
+	},
+	"supported_items": "#minecraft:enchantable/chest_armor",
+	"primary_items": "#minecraft:enchantable/chest_armor",
+	"weight": 3,
+	"max_level": 5,
+	"min_cost": {
+		"base": 20,
+		"per_level_above_first": 1
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 10
+	},
+	"anvil_cost": 4,
+	"slots": [
+		"chest"
+	],
+	"effects": {
+		"minecraft:attributes": [
+				      {
+				        "id": "hearty",
+				        "attribute": "minecraft:generic.max_health",
+				        "amount": {
+				          "type": "minecraft:linear",
+				          "base": 0.1,
+				          "per_level_above_first": 0.1
+				        },
+				        "operation": "add_multiplied_base"
+				      }
+		]
+	}
+}
